@@ -581,6 +581,76 @@ body {
     padding: 10px;
     border-radius: 0.5rem;
 }
+
+.circle-percentage{
+   background:  #081b29;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.skill{
+    width: 160px;
+    height: 160px;
+  
+    position: relative;
+ 
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px #0ef, -6px -6px 10px -1px #0ef;
+    padding: 20px;
+}
+.inner{
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 120px;
+    border-radius: 50%;
+   box-shadow: inset 4px 4px 6px -1px #0ef, inset -4px -4px 6px -1px #0ef, -0.5px -0.5px 0px #0ef, 0.5px -0.5px 0px #0ef, 0px 12px 10px -10px #0ef;
+}
+
+
+#number{
+    font-weight:600;
+    color: aliceblue;
+}
+
+circle{
+    stroke:#0ef ;
+     stroke-width:20px ;
+     fill:none;
+     stroke-linecap: round;
+     stroke-dasharray: 472;
+     stroke-dashoffset: 472;
+     animation: circlel 2s linear forwards;
+
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+@keyframes circlel {
+    100%{
+        stroke-dashoffset: 94.4;
+    }
+}
+
+
 @keyframes animate {
     100%{
         transform: scaleX(1);
