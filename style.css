@@ -582,23 +582,32 @@ body {
     border-radius: 0.5rem;
 }
 
+.pro-skills{
+    text-align: center;
+}
+
+
 .circle-percentage{
-   background:  #081b29;
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    background: #081b29;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill{
     width: 160px;
-    height: 160px;
+    height: 180px;
   
     position: relative;
  
 }
+.skill p{
 
-.outer{
+}
+
+/* .outer{
     height: 160px;
     width: 160px;
     border-radius: 50%;
@@ -613,25 +622,107 @@ body {
     width: 120px;
     border-radius: 50%;
    box-shadow: inset 4px 4px 6px -1px #0ef, inset -4px -4px 6px -1px #0ef, -0.5px -0.5px 0px #0ef, 0.5px -0.5px 0px #0ef, 0px 12px 10px -10px #0ef;
-}
+} */
 
 
 #number{
-    font-weight:600;
+    font-weight: 600;
     color: aliceblue;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+#number1{
+    font-weight: 600;
+    color: aliceblue;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+#number2{
+    font-weight: 600;
+    color: aliceblue;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+#number3{
+    font-weight: 600;
+    color: aliceblue;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 70px;
 }
 
-circle{
+
+
+.svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circle{
+    stroke-width:5px ;
+    stroke-linecap: round;
+   fill:none;
+   stroke: rgb(42, 52, 53);
+}
+
+
+
+
+.circle-inner{
+    
     stroke:#0ef ;
-     stroke-width:20px ;
+     stroke-width:5px ;
      fill:none;
      stroke-linecap: round;
      stroke-dasharray: 472;
      stroke-dashoffset: 472;
      animation: circlel 2s linear forwards;
+    
 
 }
-svg{
+
+.circle-inner1{
+    
+    stroke:#0ef ;
+     stroke-width:5px ;
+     fill:none;
+     stroke-linecap: round;
+     stroke-dasharray: 399;
+     stroke-dashoffset: 362;
+     animation: circlel1 2s linear forwards;
+
+}
+.circle-inner2{
+    
+    stroke:#0ef ;
+     stroke-width:5px ;
+     fill:none;
+     stroke-linecap: round;
+     stroke-dasharray: 367;
+     stroke-dashoffset: 267;
+     animation: circlel2 2s linear forwards;
+
+}
+.circle-inner3{
+    
+    stroke:#0ef ;
+     stroke-width:5px ;
+     fill:none;
+     stroke-linecap: round;
+     stroke-dasharray: 479;
+     stroke-dashoffset: 479;
+     animation: circlel 2s linear forwards;
+
+}
+.svg-inner{
     position: absolute;
     top: 0;
     left: 0;
@@ -642,9 +733,22 @@ svg{
 
 
 
-
-
 @keyframes circlel {
+    100%{
+        stroke-dashoffset: 94.4;
+    }
+}
+@keyframes circlel1 {
+    100%{
+        stroke-dashoffset: 134;
+    }
+}
+@keyframes circlel2 {
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+@keyframes circlel3 {
     100%{
         stroke-dashoffset: 94.4;
     }
