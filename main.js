@@ -288,7 +288,7 @@ new Typed('.text', {
         });
         form.addEventListener('submit',async function (event) {
           event.preventDefault(); 
-          await axios.post('https://rayhan-portfolio-server-1.onrender.com/rayhan/create',formData)
+          await axios.post('https://rayhan-portfolio-server.onrender.com/rayhan/create',formData) 
           .then((res) =>{
             console.log(res);
           })
@@ -299,18 +299,15 @@ new Typed('.text', {
       });
 
 
-      document.getElementById('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-     window.location.href = "/" // Reload the page
-    });
+     
 
 
-    document.getElementById('form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
+    // document.getElementById('form').addEventListener('submit', function(event) {
+    //   event.preventDefault(); // Prevent the default form submission
       
-      // Show the alert message
-      alert("Form submitted successfully!")
-    })
+    //   // Show the alert message
+    //   alert("Form submitted successfully!")
+    // })
       
       
 
