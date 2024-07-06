@@ -905,3 +905,50 @@ body {
         opacity: 1;
     }
 }
+
+
+
+
+@media (min-width: 476px) and (max-width: 756px) {
+    .home{
+        margin-top: 200.7px;
+        margin-right: 20px;
+        background-size: 600px;
+    }
+
+
+
+    .home-content {
+        max-width: 200px;
+        height: auto;
+    }
+    .home-sci {
+        width: 300px;
+        margin: 0 auto;
+        display: inline-flex;
+      
+        
+    }
+
+
+    .btn-box {
+
+    }
+    .btn-responsive{
+        position: absolute;
+        left: 40%;
+    }
+    .about{
+        margin-top: 200px;
+    }
+    .btn-more-about-me{
+        position: absolute;
+        left: 40%;
+    }
+    #portfolio{
+        text-align: center;
+        margin-left: 10%;
+    }
+    .contact {
+        display: block;}
+}
