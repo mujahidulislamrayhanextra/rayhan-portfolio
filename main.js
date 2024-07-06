@@ -296,18 +296,28 @@ new Typed('.text', {
         
         
         });
+
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = '/'; // Redirect to home page
+        });
+
+
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Show the alert message
+            alert("Form submitted successfully!")
+          })
+
       });
 
 
      
 
 
-    // document.getElementById('form').addEventListener('submit', function(event) {
-    //   event.preventDefault(); // Prevent the default form submission
-      
-    //   // Show the alert message
-    //   alert("Form submitted successfully!")
-    // })
+ 
       
       
 
