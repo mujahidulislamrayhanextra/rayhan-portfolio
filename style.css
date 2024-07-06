@@ -379,8 +379,12 @@ body {
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(359px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    width: 90%;
+    margin: 30px 5%;
+    grid-gap: 30px;
 }
+
 .row{
     position: relative;
     overflow: hidden;
@@ -826,8 +830,96 @@ body {
 
 
 
-
-
+#burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 50px;
+    overflow: visible;
+    position: relative;
+    z-index:2;
+    display: none;
+  }
+  #burger-menu span,
+  #burger-menu span:before,
+  #burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+  #burger-menu span:before,
+  #burger-menu span:after {
+    content: "";
+  }
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 16px;
+  }
+  #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 20px;
+  }
+  
+  #burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+  #burger-menu.close span:after {
+    top: 0px;
+    left:0;
+    transform: rotate(90deg);
+    opacity:0;
+    width:0;
+  }
+  
+  #menu{
+    z-index:1;
+    min-width:100%;
+    min-height:100%;
+    position: fixed;
+    top:0;
+    height:0;
+    visibility: hidden;
+    opacity: 0;
+    text-align:center;
+    padding-top:20px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  #menu.overlay{
+    visibility: visible;
+    opacity: 1;
+    padding-top:100px;
+    background:rgba(0,0,0,0.5);
+  }
+  
+  #menu li{
+    list-style:none;
+  }
+  #menu a{
+    color:#fff;
+    display:block;
+    font-size: 32px;
+    margin-bottom:30px;
+    text-decoration:none;
+  }
 
 @keyframes circlel {
     100%{
@@ -909,7 +1001,7 @@ body {
 
 
 
-@media (min-width: 476px) and (max-width: 756px) {
+@media (min-width: 476px) and (max-width: 768px) {
     .home{
         margin-top: 200.7px;
         margin-right: 20px;
@@ -951,6 +1043,21 @@ body {
     }
     .contact {
         display: block;}
+
+
+        #burger-menu {
+            cursor: pointer;
+            height: 27px;
+            width: 27px;
+            margin: 50px;
+            overflow: visible;
+            position: relative;
+            z-index:2;
+            display: block;
+          }
+    .navbar{
+        display: none;
+    }
 }
 
 
@@ -998,4 +1105,17 @@ body {
     }
     .contact {
         display: block;}
+        #burger-menu {
+            cursor: pointer;
+            height: 27px;
+            width: 27px;
+            margin: 50px;
+            overflow: visible;
+            position: relative;
+            z-index:2;
+            display: block;
+          }
+    .navbar{
+        display: none;
+    }
 }
