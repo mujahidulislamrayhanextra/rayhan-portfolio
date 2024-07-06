@@ -952,3 +952,50 @@ body {
     .contact {
         display: block;}
 }
+
+
+
+
+@media (min-width: 350px) and (max-width: 475px) {
+    .home{
+        margin-top: 200.7px;
+        margin-right: 20px;
+        background-size: 430px;
+    }
+
+
+
+    .home-content {
+        max-width: 200px;
+        height: auto;
+    }
+    .home-sci {
+        width: 300px;
+        margin: 0 auto;
+        display: inline-flex;
+      
+        
+    }
+
+
+    .btn-box {
+
+    }
+    .btn-responsive{
+        position: absolute;
+        left: 40%;
+    }
+    .about{
+        margin-top: 200px;
+    }
+    .btn-more-about-me{
+        position: absolute;
+        left: 40%;
+    }
+    #portfolio{
+        text-align: center;
+        margin-left: 10%;
+    }
+    .contact {
+        display: block;}
+}
