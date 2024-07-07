@@ -364,6 +364,11 @@ body {
     background-color: #000;
     color:#fff;
 }
+
+
+.skills-div-sizing{
+
+}
 .main-text{
     padding-top: 130px;
     margin-top: 200px;
@@ -588,7 +593,15 @@ body {
 
 .pro-skills{
     text-align: center;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 40% 40%;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    grid-gap: 5%;
 }
+
 
 
 .circle-percentage{
@@ -1011,7 +1024,7 @@ body {
 
 
     .home-content {
-        max-width: 200px;
+        max-width: 50%;
         height: auto;
     }
     .home-sci {
@@ -1058,6 +1071,13 @@ body {
     .navbar{
         display: none;
     }
+   
+    .pro-skills{
+        grid-template-columns: 90%;
+    }
+
+
+
 }
 
 
@@ -1118,4 +1138,26 @@ body {
     .navbar{
         display: none;
     }
+    .pro-skills{
+        grid-template-columns: 90%;
+    }
+
+    
 }
+
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .home-content {
+        max-width: 460px;
+    }
+  }
+
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .navbar a {
+        font-size: 130%;
+    }
+    .home-content{
+        max-width: 60.4%;
+    }
+  }
